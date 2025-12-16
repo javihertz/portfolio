@@ -1,0 +1,72 @@
+---
+
+---
+
+<header>
+  <nav class="container">
+    <a href="#" class="logo">javihertz<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact" class="btn btn-sm">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    height: var(--nav-height);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .dot {
+    color: var(--color-primary);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+  }
+
+  .nav-links a:hover {
+    color: var(--color-text);
+  }
+
+  .btn-sm {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: white !important;
+  }
+
+  .btn-sm:hover {
+    border-color: var(--color-primary);
+    background: rgba(92, 205, 167, 0.1);
+  }
+</style>

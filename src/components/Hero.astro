@@ -1,0 +1,60 @@
+---
+
+---
+
+<section class="hero">
+  <div class="container">
+    <h1 class="fade-in">
+      Hi There, I'm Javi <br />
+      <span class="text-gradient">Senior Frontend Engineer</span>
+    </h1>
+    <p class="fade-in delay-1"></p>
+    <div class="cta-group fade-in delay-2">
+      <a href="#about" class="btn btn-primary">About me</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: var(--nav-height);
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
