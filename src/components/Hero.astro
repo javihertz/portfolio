@@ -24,12 +24,32 @@
     justify-content: center;
     text-align: center;
     padding-top: var(--nav-height);
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   p {
     font-size: 1.25rem;
     max-width: 600px;
     margin: 0 auto 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 1rem;
+    }
+
+    .cta-group {
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .cta-group {

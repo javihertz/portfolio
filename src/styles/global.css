@@ -48,6 +48,16 @@ h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; margin-bottom: 2rem; }
 h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.25rem; }
+  
+  section {
+    padding: 4rem 0;
+  }
+}
+
 p {
   margin-bottom: 1.5rem;
   color: var(--color-text-muted);
