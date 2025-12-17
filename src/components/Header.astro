@@ -3,18 +3,29 @@
 ---
 
 <header>
-  <nav class="container">
+  <nav class="header-container">
     <a href="#" class="logo">javihertz<span class="dot">.</span></a>
-    <!-- <ul class="nav-links">
-      <li><a href="#about" class="btn btn-sm">About me</a></li>
-      <li><a href="#contact" class="btn btn-sm">Contact</a></li>
-    </ul> -->
+    <ul class="nav-links">
+      <li>
+        <a href="https://linkedin.com/in/javihertz" class="btn btn-sm"
+          >LinkedIn</a
+        >
+      </li>
+      <li>
+        <a href="https://github.com/javihertz" class="btn btn-sm">GitHub</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
 <style>
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   header {
-    height: var(--nav-height);
+    min-height: var(--nav-height);
     position: fixed;
     width: 100%;
     top: 0;
@@ -22,6 +33,7 @@
     backdrop-filter: blur(10px);
     background: rgba(10, 10, 10, 0.8);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1rem;
   }
 
   nav {
@@ -42,7 +54,7 @@
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 8px;
     list-style: none;
     align-items: center;
   }
