@@ -94,6 +94,9 @@ section {
   overflow: hidden;
 }
 
+main {
+  padding: 3rem;
+}
 /* Utilities */
 .text-gradient {
   background: linear-gradient(
