@@ -95,8 +95,15 @@ section {
 }
 
 main {
-  padding: 3rem;
+  padding: 1rem;
 }
+
+@media (min-width: 768px) {
+  main {
+    padding: 3rem;
+  }
+}
+
 /* Utilities */
 .text-gradient {
   background: linear-gradient(
